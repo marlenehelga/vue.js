@@ -1,0 +1,38 @@
+.midten{
+    width: 50%;
+    margin-left: 25%;
+}
+h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    border: none;
+    background: none;
+}
+#input{
+    margin-top: 200px;
+    margin-left: 25%;
+    width: 50%;
+}
+label{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid hotpink;
+    font-size: 1em;
+    padding: 5px 0;
+    margin: 10px 0 5px 0;
+    width: 100%;
+}
+  
+.submit {
+    background-color: hotpink;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+}
