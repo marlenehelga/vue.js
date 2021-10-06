@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app"> 
+<div class="midten">
+    <label>Navn: </label>
+    <input type="text" v-model="name"/>
+
+    <h1>Velkommen til <span>{{ name }}</span> <br> God fornøjelse med trommerne!</h1>
+</div>
+
+    <button id="crash" @click="handeleEventCrash"><img src="/trommesæt/images/crash.png" alt=""></button>
+    <button id="tom4"  @click="handeleEventTom4" ><img src="/trommesæt/images/tom4.png" alt=""></button>
+    <button id="tom1"  @click="handeleEventTom1"><img src="/trommesæt/images/tom1.png" alt=""></button>
+    <button id="kick"  @click="handeleEventKick"><img src="/trommesæt/images/kick.png" alt=""></button>
+    <button id="tom2"  @click="handeleEventTom2"><img src="/trommesæt/images/tom2.png" alt=""></button>
+    <button id="tom3"  @click="handeleEventTom3"><img src="/trommesæt/images/tom3.png" alt=""></button>
+    <button id="snare" @click="handeleEventSnare"><img src="/trommesæt/images/snare.png" alt=""></button>
+    
+</div>
+
+<div id="input">
+    <h1>Du kan nu skrive dig op herunder</h1>
+
+    <label> Navn</label>
+    <input type="text" placeholder="Navn" v-model="navn">
+         <br>
+    <label> E-mail</label>
+    <input type="text" placeholder="E-mail" v-model="email">
+        <br>
+    <label> Adgangskode</label>
+    <input type="text" placeholder="Adgangskode" v-model="adganskode">
+        <br>
+    <label> Gentag adgangskode</label>
+    <input type="text" placeholder="Gentag adgangskode" v-model="gentag">
+        <br>
+    <label> Telefonnummer</label>
+    <input type="text" placeholder="Telefonnummer" v-model="telefonnummer">
+        <br>
+    <label> Adresse</label>
+    <input type="text" placeholder="Adresse" v-model="adresse">
+        <br>
+    <label> Postnummer</label>
+    <input type="text" placeholder="Postnummer" v-model="postnummer">
+
+    <button class="submit" @click="submitForm">Submit</button>
+
+</div>
+
+    
+
+ <script src="app.js"></script>
+</body>
+</html>
